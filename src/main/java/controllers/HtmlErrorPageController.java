@@ -25,7 +25,7 @@ public class HtmlErrorPageController implements ErrorController {
             modelAndView.setViewName("error-500");
         }
         else {
-            modelAndView.setViewName("error-404");
+            modelAndView.setViewName("error");
         }
 
         return modelAndView;
