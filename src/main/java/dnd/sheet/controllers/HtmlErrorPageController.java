@@ -1,4 +1,4 @@
-package controllers;
+package dnd.sheet.controllers;
 
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.boot.web.servlet.error.ErrorController;

@@ -1,4 +1,4 @@
-package model;
+package dnd.sheet.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
