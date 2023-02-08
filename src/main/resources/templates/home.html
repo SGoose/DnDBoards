@@ -1,10 +1,177 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org" lang="ru">
 <head>
-    <title>Стартовая  cnhfybasd страница</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Стартовая страница</title>
+    <meta  http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-<p th:text="'Hello, ' + ${title} + '!'" />
+<form class="needs-validation" novalidate>
+    <!--ВЕРХНИЙ БЛОК ПЕРСОНАЖЕЙ-->
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="character_name">Имя персонажа</label>
+            <input type="text" class="form-control" id="character_name" value="Введите имя персонажа" required>
+            <div class="valid-feedback">
+                Выглядит хорошо!
+            </div>
+        </div>
+        <div class="col-md-2 mb-3">
+        <div class="col-md-12 mb-3">
+            <label for="character_class">Класс</label>
+            <input type="text" class="form-control" id="character_class" value="Введите класс" required>
+            <div class="valid-feedback">
+                Выглядит хорошо!
+            </div>
+        </div>
+        <div class="col-md-12 mb-3">
+            <label for="character_race">Раса</label>
+            <input type="text" class="form-control" id="character_race" value="Введите расу" required>
+            <div class="valid-feedback">
+                Выглядит хорошо!
+            </div>
+        </div>
+        </div>
+        <div class="col-md-2 mb-3">
+        <div class="col-md-12 mb-3">
+            <label for="character_background">Предистория</label>
+            <input type="text" class="form-control" id="character_background" value="Введите название предитории" required>
+            <div class="valid-feedback">
+                Выглядит хорошо!
+            </div>
+        </div>
+        <div class="col-md-12 mb-3">
+            <label for="character_aligment">Мировозрение</label>
+            <input type="text" class="form-control" id="character_aligment" value="Введите мировозрение" required>
+            <div class="valid-feedback">
+                Выглядит хорошо!
+            </div>
+        </div>
+        </div>
+        <div class="col-md-2 mb-3">
+        <div class="col-md-12 mb-3">
+            <label for="experience">Опыт</label>
+            <input type="text" class="form-control" id="experience" value="Введите количество опыта" required>
+            <div class="valid-feedback">
+                Выглядит хорошо!
+            </div>
+        </div>
+            <div class="col-md-12 mb-3">
+                <label for="name_of_player">Имя игрока</label>
+                <input type="text" class="form-control" id="name_of_player" value="Введите ваше имя" required>
+                <div class="valid-feedback">
+                    Выглядит хорошо!
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--КД, ХП, СКОРОСТЬ, ПАССИВНАЯ ВНИМАТЕЛЬ, БМ, ИНИЦИАТИВА-->
+    <div class="form-row">
+        <div class="col-md-2 mb-3">
+            <div class="col-md-6 mb-3">
+                <label for="profency_bonus">БМ</label>
+                <input type="text" class="form-control" id="profency_bonus" value="БМ" required>
+                <div class="valid-feedback">
+                    Выглядит хорошо!
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="armor_class">КД</label>
+                <input type="text" class="form-control" id="armor_class" value="Введите ваше КД" required>
+                <div class="valid-feedback">
+                    Выглядит хорошо!
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 mb-3">
+            <div class="col-md-6 mb-3">
+                <label for="character_initative">Инициатива</label>
+                <input type="text" class="form-control" id="character_initative" value="Инициатива" required>
+                <div class="valid-feedback">
+                    Выглядит хорошо!
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="character_hp">ХП</label>
+                <input type="text" class="form-control" id="character_hp" value="Введите ваше ХП" required>
+                <div class="valid-feedback">
+                    Выглядит хорошо!
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 mb-3">
+            <div class="col-md-6 mb-3">
+                <label for="passive_perseption">ПВ</label>
+                <input type="text" class="form-control" id="passive_perseption" value="Пассивная внимательность" required>
+                <div class="valid-feedback">
+                    Выглядит хорошо!
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="character_speed">Скорость</label>
+                <input type="text" class="form-control" id="character_speed" value="Введите вашу скорость" required>
+                <div class="valid-feedback">
+                    Выглядит хорошо!
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Характеристики персонажей-->
+    <div class="form-row">
+        <div class="col-md-2 mb-3">
+            <div class="col-md-4 mb-3">
+                <label for="STR">STR</label>
+                <input type="text" class="form-control" id="STR" value="STR" required>
+                <div class="valid-feedback">
+                    Выглядит хорошо!
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="DEX">DEX</label>
+                <input type="text" class="form-control" id="DEX" value="DEX" required>
+                <div class="valid-feedback">
+                    Выглядит хорошо!
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 mb-3">
+            <div class="col-md-4 mb-3">
+                <label for="CON">CON</label>
+                <input type="text" class="form-control" id="CON" value="CON" required>
+                <div class="valid-feedback">
+                    Выглядит хорошо!
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="INT">INT</label>
+                <input type="text" class="form-control" id="INT" value="INT" required>
+                <div class="valid-feedback">
+                    Выглядит хорошо!
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 mb-3">
+            <div class="col-md-4 mb-3">
+                <label for="WIS">WIS</label>
+                <input type="text" class="form-control" id="WIS" value="WIS" required>
+                <div class="valid-feedback">
+                    Выглядит хорошо!
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="CHA">CHA</label>
+                <input type="text" class="form-control" id="CHA" value="CHA" required>
+                <div class="valid-feedback">
+                    Выглядит хорошо!
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Отправить форму</button>
+</form>
+    <p th:text="'Hello, ' + ${title} + '!'" />
 </body>
 </html>
